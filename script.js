@@ -8,7 +8,7 @@ function manipulateData(arr) {
     .then((arr) => {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          const filteredArr = arr.filter((num) => num % 2 === 0);
+          const filteredArr = arr.filter((num) => num % 2 !== 0);
           resolve(filteredArr);
         }, 1000);
       });
